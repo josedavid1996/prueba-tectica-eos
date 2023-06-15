@@ -15,7 +15,37 @@ body {
 .shadow-input {
   box-shadow: 0px 11px 23px 0px rgba(0, 0, 0, 0.02);
 }
+.shadow-card {
+  box-shadow: 0px 14.7092px 28.1927px rgba(62, 73, 84, 0.04);
+}
+.shadow-bar {
+  box-shadow: 0px 0px 16.7552px rgba(19, 180, 151, 0.56);
+}
 
 input {
   caret-color: #13b497;
+}
+
+.swiper-button-next {
+  color: white !important;
+  top: 80% !important;
+  right: 53px !important;
+}
+
+.swiper-button-next:after {
+  font-size: 16px !important;
+}
+.swiper-button-prev {
+  color: white !important;
+  top: 80% !important;
+  left: 53px;
+}
+
+.swiper-button-prev:after {
+  font-size: 16px !important;
+}
+
+.swiper-slide {
+  width: 100% !important;
+  height: 100% !important;
 }

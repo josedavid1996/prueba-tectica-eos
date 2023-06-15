@@ -23,7 +23,8 @@ module.exports = {
           DEFAULT: '#13B497'
         },
         secondary: {
-          50: '#f1f2f4'
+          50: '#f1f2f4',
+          100: '#cacaca'
 
         }
 

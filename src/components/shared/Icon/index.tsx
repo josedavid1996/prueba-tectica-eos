@@ -11,6 +11,7 @@ export type IconName =
   | 'search'
   | 'sun'
   | 'moon'
+  | 'curve'
 
 interface Props extends SVGProps<SVGSVGElement> {
   name: IconName
@@ -30,7 +31,8 @@ const icons: Record<IconName, any> = {
   'arrow-down': dynamic(() => import('@assets/icons/arrow-down.svg')),
   search: dynamic(() => import('@assets/icons/search.svg')),
   sun: dynamic(() => import('@assets/icons/sun-regular.svg')),
-  moon: dynamic(() => import('@assets/icons/moon-regular.svg'))
+  moon: dynamic(() => import('@assets/icons/moon-regular.svg')),
+  curve: dynamic(() => import('@assets/icons/curve.svg'))
 }
 const Icon = ({ name, ...props }: Props) => {
   const Component = icons[name]

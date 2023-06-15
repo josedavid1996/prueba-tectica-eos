@@ -1,24 +1,21 @@
+import { classNames } from '@src/utils/classNames'
 import React, { HTMLAttributes } from 'react'
-import { classNames } from '../../../utils'
 
-type Variant = 'title' | 'subtitle'
+type Variant = 'light' | 'normal' | 'medium' | 'semibold' | 'bold'
 type Color = 'primary' | 'secondary' | 'black' | 'white'
-type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl'
+type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
 interface Props extends HTMLAttributes<HTMLHeadingElement> {
   size?: Size
   color?: Color
-  variant?: 'title' | 'subtitle'
+  variant?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold'
   as?: 'h1' | 'h2' | 'h3' | 'h4'
 }
 
 const sizes: Record<Size, string> = {
-  '4xl': 'title-1',
-  '3xl': 'title-2',
-  '2xl': 'title-3',
-  xl: 'title-4',
+  xl: '24.5154px',
   lg: 'title-5',
-  md: 'title-6',
+  md: 'text-[16.8286px] sm:text-[24.5154px]',
   sm: 'title-7',
   xs: 'title-8'
 }
@@ -31,15 +28,18 @@ const colors: Record<Color, string> = {
 }
 
 const variants: Record<Variant, string> = {
-  title: 'font-bold',
-  subtitle: 'font-medium'
+  light: 'font-light',
+  normal: 'font-normal',
+  medium: 'font-medium',
+  semibold: 'font-semibold',
+  bold: 'font-bold'
 }
 
 const Heading = ({
-  as = 'h1',
-  size = '2xl',
-  color = 'black',
-  variant = 'title',
+  as = 'h2',
+  size = 'sm',
+  color = 'white',
+  variant = 'normal',
   ...props
 }: Props) => {
   return React.createElement(as, {
