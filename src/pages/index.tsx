@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div className="hidden sm:block">
-        <h3 className="text-primary py-[20px] pl-[93.87px] text-[16px] font-semibold dark:bg-primary-500 bg-secondary-100">
+        <h3 className="text-primary py-[20px] pl-[93.87px] text-[16px] font-semibold dark:bg-primary-500 bg-[#F1F2F4]">
           Dashboard /
         </h3>
       </div>

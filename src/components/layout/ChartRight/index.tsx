@@ -1,11 +1,9 @@
-import Slider from '@src/components/shared/Slider'
+// import Slider from '@src/components/shared/Slider'
 
 const ChartRight = () => {
   return (
     <>
-      <div className="w-full">
-        <Slider />
-      </div>
+      <div className="w-full">{/* <Slider /> */}</div>
     </>
   )
 }

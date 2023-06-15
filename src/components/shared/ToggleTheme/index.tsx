@@ -15,14 +15,14 @@ const ToggleTheme = ({ className, ...props }: Props) => {
       onClick={toggleTheme}
       // TODO: Configurar botones en dark mode
       className={classNames([
-        'p-[17.1px] flex justify-center items-center rounded-[12px] bg-white dark:bg-primary border dark:border-0 border-primary ',
+        'w-[36.52px] h-[36.52px] smx:min-w-[56px] smx:h-[56px] flex justify-center items-center rounded-[12px]  bg-primary  ',
         className
       ])}
     >
       {isDark() ? (
         <Icon name="sun" className="w-[21.81px] h-[21.81px] text-white " />
       ) : (
-        <Icon name="moon" className="w-[21.81px] h-[21.81px] text-primary" />
+        <Icon name="moon" className="w-[21.81px] h-[21.81px] text-white " />
       )}
     </button>
   )

@@ -9,7 +9,7 @@ body.dark {
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f1f2f4;
+  overflow-x: hidden;
 }
 
 .shadow-input {
@@ -27,7 +27,7 @@ input {
 }
 
 .swiper-button-next {
-  color: white !important;
+  color: #ffffff !important;
   top: 80% !important;
   right: 53px !important;
 }
