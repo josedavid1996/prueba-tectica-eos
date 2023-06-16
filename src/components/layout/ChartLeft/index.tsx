@@ -3,6 +3,7 @@ import CardData from '@src/components/shared/CardData'
 import Heading from '@src/components/shared/Heading'
 import Icon from '@src/components/shared/Icon'
 import Text from '@src/components/shared/Text'
+import Image from 'next/image'
 
 const ChartLeft = () => {
   return (
@@ -80,26 +81,88 @@ const ChartLeft = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-[32.57px] gap-y-[34.88px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[32.57px] gap-y-[34.88px]">
           {/*  TICKET */}
           <CardData
             title="456k Pcs"
             subTitle="Daily"
             text="Ticket Sold"
             partBottom={
-              <div className="h-[8.53px] rounded-[40px] w-full bg-[#ffffff1f] mt-3 md:mt-[54.84px]">
+              <div className="h-[8.53px] rounded-[40px] w-[80%] mx-auto bg-[#ffffff1f] my-[22.02px] xl:mb-[31.78px] xl:mt-[54.84px]">
                 <span className="w-[70%] h-full bg-primary rounded-[40px] shadow-bar block"></span>
               </div>
             }
           />
-          <CardData title="451,509" text="Sales" subTitle="This Week" />
+          <CardData
+            title="451,509"
+            text="Sales"
+            subTitle="This Week"
+            partBottom={
+              <div className="w-[442.99px] h-[65.86px]">
+                <Image
+                  src="/grafic-second.png"
+                  alt="grafic-second"
+                  layout="fill"
+                />
+              </div>
+            }
+          />
           <CardData
             title="$456,623"
             text="Income"
             subTitle="Monthly"
-            isView="hidden lg:block"
+            isView="hidden md:flex"
+            partBottom={
+              <div className="w-[453.27px] h-[78.77px] ">
+                <Image src="/grafic.png" alt="grafic" layout="fill" />
+              </div>
+            }
           />
-          <CardData subTitle="This Week" />
+          <CardData
+            subTitle="This Week"
+            isViewSubTitle="hidden xxl:flex"
+            partBottom={
+              <div className=" flex items-center justify-center xxl:justify-between px-8 mb-[18.22px]  xxl:mb-[30.13px] ">
+                <div className="relative w-[171.99px] h-[179.57px] xxl:w-[114.36px] xxl:h-[114.9px]">
+                  <Image
+                    src="/rounded-grafic.png"
+                    alt="rounded-grafic"
+                    layout="fill"
+                    className="w-full h-full"
+                  />
+                </div>
+
+                <div className="hidden xxl:block">
+                  <div className="grid grid-cols-2 gap-[11.74px] ">
+                    <div className="flex items-center gap-x-[11.23px]">
+                      <span className="block w-[11.23px] h-[12.02px] bg-[#FF4F4F]"></span>
+                      <Text size="xs" variant="semibold">
+                        Ticket A
+                      </Text>
+                    </div>
+                    <div className="flex items-center gap-x-[11.23px]">
+                      <span className="block w-[11.23px] h-[12.02px] bg-[#1BD344]"></span>
+                      <Text size="xs" variant="semibold">
+                        Ticket C
+                      </Text>
+                    </div>
+                    <div className="flex items-center gap-x-[11.23px]">
+                      <span className="block w-[11.23px] h-[12.02px] bg-[#3C65F5]"></span>
+                      <Text size="xs" variant="semibold">
+                        Ticket B
+                      </Text>
+                    </div>
+                    <div className="flex items-center gap-x-[11.23px]">
+                      <span className="block w-[11.23px] h-[12.02px] bg-[#FFF742]"></span>
+                      <Text size="xs" variant="semibold">
+                        Ticket D
+                      </Text>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
+          />
         </div>
       </div>
     </>

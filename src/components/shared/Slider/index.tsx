@@ -7,11 +7,10 @@ import 'swiper/css/navigation'
 import { Autoplay, Navigation } from 'swiper'
 
 import Heading from '../Heading'
-import { useId } from 'react'
+import { v4 } from 'uuid'
 import Image from 'next/image'
 
 const Slider = () => {
-  const uid = useId()
   return (
     <>
       <div className="mt-[23px] w-full  ">
@@ -34,13 +33,15 @@ const Slider = () => {
               .fill(0)
               .map((_, index) => {
                 return (
-                  <SwiperSlide key={uid}>
+                  <SwiperSlide key={v4()}>
                     <div className="w-full h-[550px] relative overflow-hidden">
                       <Image
                         src={`https://picsum.photos/300/300?random=${
                           index + 1
                         }`}
-                        alt={uid}
+                        alt={`https://picsum.photos/300/300?random=${
+                          index + 1
+                        }`}
                         layout="fill"
                         className="w-full h-full left-0"
                         objectFit="cover"
