@@ -10,26 +10,26 @@ const ChartLeft = () => {
     <>
       <div className="w-full flex flex-col mx-auto  gap-[26px] max-w-[878.88px]">
         {/* FIRST CHART */}
-        <div className="bg-secondary-50 dark:bg-primary-400 rounded-[15px] sm:rounded-[17.1608px] shadow-card w-full pt-[15px] pb-[20.05px] pl-[15px] pr-[13.74px] sm:pt-[36.77px] sm:pb-[35.29pxpx] sm:pl-[36.77px] sm:pr-[44.13px] border border-primary dark:border-transparent">
+        <div className="bg-[#13b49785] dark:bg-primary-400 rounded-[15px] sm:rounded-[17.1608px] shadow-card w-full pt-[15px] pb-[20.05px] pl-[15px] pr-[13.74px] sm:pt-[36.77px] sm:pb-[35.29pxpx] sm:pl-[36.77px] sm:pr-[44.13px] border border-primary dark:border-transparent">
           {/* TITLE */}
           <div className="flex justify-between items-center">
-            <Heading variant="light" size="md">
+            <Heading variant="light" size="md" color="dark-white">
               Best Selling
             </Heading>
 
             <div className="flex gap-[3.89px] sm:gap-[11.58px] items-center">
-              <p className="text-[6.88px] sm:text-[14.71px] font-medium text-primary dark:text-[#ffffffbf]">
+              <p className="text-[6.88px] sm:text-[14.71px] font-medium text-primary-900 dark:text-[#ffffffbf]">
                 This Week
               </p>
               <Icon
                 name="arrow-down"
-                className="w-[2.95px] h-[5.87px] sm:w-[7.35px] sm:h-[14.71px] text-primary dark:text-[#B7B7B7]"
+                className="w-[2.95px] h-[5.87px] sm:w-[7.35px] sm:h-[14.71px] text-primary-900 dark:text-[#B7B7B7]"
               />
             </div>
           </div>
           {/* DAY */}
 
-          <div className="pl-[12.71px] pr-[8.12px] pt-[7.37px] pb-[7.2px] sm:pl-[31.87px] sm:pr-[22.13px] sm:pt-[18.39px] sm:pb-[16.9px] flex justify-between dark:bg-primary-300 bg-[#e7e6e6] rounded-[6.88085px] sm:rounded-[17.1608px] sm:mt-[26.74px] sm:mb-[35.55px]">
+          <div className="pl-[12.71px] pr-[8.12px] pt-[7.37px] pb-[7.2px] sm:pl-[31.87px] sm:pr-[22.13px] sm:pt-[18.39px] sm:pb-[16.9px] flex justify-between dark:bg-primary-300 bg-[#13b497c4] rounded-[6.88085px] sm:rounded-[17.1608px] sm:mt-[26.74px] sm:mb-[35.55px]">
             <Text size="xs" variant="medium">
               Tuesday
             </Text>
@@ -44,23 +44,47 @@ const ChartLeft = () => {
             {/* IMAGE */}
 
             <div className="w-full">
-              <div className="h-[200px]"></div>
+              <div className="relative">
+                <Image
+                  src="/main-graph.png"
+                  alt="main-graph.png"
+                  width={300}
+                  height={300}
+                  layout="responsive"
+                  objectFit="contain"
+                />
+              </div>
               <div className="ml-[7.53px] flex justify-between  gap-6">
                 <div>
                   <div className="w-[19.59px] h-[18.8px] bg-primary-50 rounded-[3.93191px]"></div>
-                  <Text size="xs" variant="medium" className="mt-[9.85px]">
+                  <Text
+                    size="xs"
+                    variant="medium"
+                    className="mt-[9.85px]"
+                    color="dark-white"
+                  >
                     Movies Ticket
                   </Text>
                 </div>
                 <div>
                   <div className="w-[19.59px] h-[18.8px] bg-primary rounded-[3.93191px]"></div>
-                  <Text size="xs" variant="medium" className="mt-[9.85px]">
+                  <Text
+                    size="xs"
+                    variant="medium"
+                    className="mt-[9.85px]"
+                    color="dark-white"
+                  >
                     Movies Ticket
                   </Text>
                 </div>
                 <div>
                   <div className="w-[19.59px] h-[18.8px] bg-primary-100 rounded-[3.93191px]"></div>
-                  <Text size="xs" variant="medium" className="mt-[9.85px]">
+                  <Text
+                    size="xs"
+                    variant="medium"
+                    className="mt-[9.85px]"
+                    color="dark-white"
+                  >
                     Football Ticket
                   </Text>
                 </div>
@@ -88,7 +112,7 @@ const ChartLeft = () => {
             subTitle="Daily"
             text="Ticket Sold"
             partBottom={
-              <div className="h-[8.53px] rounded-[40px] w-[80%] mx-auto bg-[#ffffff1f] my-[22.02px] xl:mb-[31.78px] xl:mt-[54.84px]">
+              <div className="h-[8.53px] rounded-[40px] w-[80%] mx-auto dark:bg-[#ffffff1f] my-[22.02px] xl:mb-[31.78px] xl:mt-[54.84px] bg-primary-700">
                 <span className="w-[70%] h-full bg-primary rounded-[40px] shadow-bar block"></span>
               </div>
             }
@@ -136,25 +160,25 @@ const ChartLeft = () => {
                   <div className="grid grid-cols-2 gap-[11.74px] ">
                     <div className="flex items-center gap-x-[11.23px]">
                       <span className="block w-[11.23px] h-[12.02px] bg-[#FF4F4F]"></span>
-                      <Text size="xs" variant="semibold">
+                      <Text size="xs" variant="semibold" color="dark-white">
                         Ticket A
                       </Text>
                     </div>
                     <div className="flex items-center gap-x-[11.23px]">
                       <span className="block w-[11.23px] h-[12.02px] bg-[#1BD344]"></span>
-                      <Text size="xs" variant="semibold">
+                      <Text size="xs" variant="semibold" color="dark-white">
                         Ticket C
                       </Text>
                     </div>
                     <div className="flex items-center gap-x-[11.23px]">
                       <span className="block w-[11.23px] h-[12.02px] bg-[#3C65F5]"></span>
-                      <Text size="xs" variant="semibold">
+                      <Text size="xs" variant="semibold" color="dark-white">
                         Ticket B
                       </Text>
                     </div>
                     <div className="flex items-center gap-x-[11.23px]">
                       <span className="block w-[11.23px] h-[12.02px] bg-[#FFF742]"></span>
-                      <Text size="xs" variant="semibold">
+                      <Text size="xs" variant="semibold" color="dark-white">
                         Ticket D
                       </Text>
                     </div>

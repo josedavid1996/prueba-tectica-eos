@@ -2,7 +2,13 @@ import React, { HTMLAttributes } from 'react'
 import { classNames } from '@utils/classNames'
 
 type Variant = 'light' | 'normal' | 'medium' | 'semibold' | 'bold'
-type Color = 'primary' | 'secondary' | 'black' | 'white' | 'white-50'
+type Color =
+  | 'primary'
+  | 'secondary'
+  | 'black'
+  | 'white'
+  | 'white-50'
+  | 'dark-white'
 type Size = 'xs' | 'sm' | 'md' | 'lg'
 
 interface Props extends HTMLAttributes<HTMLHeadingElement> {
@@ -20,8 +26,9 @@ const sizes: Record<Size, string> = {
 }
 
 const colors: Record<Color, string> = {
-  white: 'text-primary-900 dark:text-white',
-  'white-50': 'text-primary dark:text-[#ffffff99]',
+  white: 'text-white',
+  'white-50': 'text-primary-900 dark:text-[#ffffff99]',
+  'dark-white': 'dark:text-white text-primary-900',
   black: 'text-primary-900 dark:text-white',
   primary: 'text-primary',
   secondary: 'text-secondary'

@@ -7,7 +7,8 @@ import IconMenu from '@src/components/shared/IconMenu'
 import ToggleTheme from '@src/components/shared/ToggleTheme'
 
 const Navbar = () => {
-  const [isMenu, setisMenu] = useState(false)
+  const [isMenu, setisMenu] = useState(true)
+  console.log(isMenu)
   return (
     <>
       <header className="h-[73px] smx:h-[120px] mt-[17px] smx:mt-[0] pl-[19px] pr-4 pt-[17px] pb-[21.03px] flex justify-between items-center lg:gap-[20px]  relative ">
