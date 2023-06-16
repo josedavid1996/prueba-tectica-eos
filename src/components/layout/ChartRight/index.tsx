@@ -1,12 +1,21 @@
 import BarCardRight from '@src/components/shared/BarCardRight'
 import Heading from '@src/components/shared/Heading'
 import Icon from '@src/components/shared/Icon'
-import Slider from '@src/components/shared/Slider'
+import dynamic from 'next/dynamic'
+const Slider = dynamic(
+  () =>
+    import('@src/components/shared/Slider').then((Slider) => Slider.default),
+  { ssr: false }
+)
+// import Slider from '@src/components/shared/Slider'
 
 const ChartRight = () => {
   return (
     <>
-      <div className="w-full ">
+      <div
+        className="w-full flex flex-col justify-between"
+        data-aos="fade-right"
+      >
         <div className="rounded-[17.1608px] hidden md:block  items-center card-bar-right px-[22.06px] pb-[14.45px] pt-[41.68px]">
           <div className="flex justify-between pl-[28.2px] pr-[82px]">
             <div>

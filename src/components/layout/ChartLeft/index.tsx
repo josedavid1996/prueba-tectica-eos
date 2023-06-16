@@ -8,7 +8,10 @@ import Image from 'next/image'
 const ChartLeft = () => {
   return (
     <>
-      <div className="w-full flex flex-col mx-auto  gap-[26px] max-w-[878.88px]">
+      <div
+        className="w-full flex flex-col mx-auto  gap-[26px] max-w-[878.88px]"
+        data-aos="fade-left"
+      >
         {/* FIRST CHART */}
         <div className="bg-[#13b49785] dark:bg-primary-400 rounded-[15px] sm:rounded-[17.1608px] shadow-card w-full pt-[15px] pb-[20.05px] pl-[15px] pr-[13.74px] sm:pt-[36.77px] sm:pb-[35.29pxpx] sm:pl-[36.77px] sm:pr-[44.13px] border border-primary dark:border-transparent">
           {/* TITLE */}

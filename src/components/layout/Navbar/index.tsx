@@ -11,7 +11,10 @@ const Navbar = () => {
   console.log(isMenu)
   return (
     <>
-      <header className="h-[73px] smx:h-[120px] mt-[17px] smx:mt-[0] pl-[19px] pr-4 pt-[17px] pb-[21.03px] flex justify-between items-center lg:gap-[20px]  relative ">
+      <header
+        className="h-[73px] smx:h-[120px] mt-[17px] smx:mt-[0] pl-[19px] pr-4 pt-[17px] pb-[21.03px] flex justify-between items-center lg:gap-[20px]  relative "
+        data-aos="fade-right"
+      >
         {/* BUSCADOR MOBILE */}
         <div
           className={`${

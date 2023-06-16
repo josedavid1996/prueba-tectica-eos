@@ -32,7 +32,7 @@ const Slider = () => {
           Event Galleries
         </Heading>
 
-        <div className=" realtive  rounded-[15px] overflow-hidden w-full h-full aspect-video ">
+        <div className=" realtive  rounded-[15px] overflow-hidden w-full h-full aspect-video xl:aspect-[1/1] xl:max-h-[555px] ">
           <Swiper
             navigation={{
               nextEl: '.swiper-button-next',
