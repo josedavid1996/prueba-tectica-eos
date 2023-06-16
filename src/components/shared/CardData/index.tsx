@@ -1,7 +1,6 @@
 import { ReactNode } from 'react'
 import Heading from '../Heading'
 import Icon from '../Icon'
-import Text from '../Text'
 
 interface Props {
   title?: string
@@ -27,12 +26,12 @@ const CardData = ({
       >
         <div className="px-[25px] md:px-[29.95px]">
           <div className="flex justify-between items-center">
-            <Heading variant="semibold" size="md" color="dark-white">
+            <Heading variant="semibold" size="sm" color="dark-white">
               {title}
             </Heading>
 
             <div className={`flex gap-[3.89px] items-center ${isViewSubTitle}`}>
-              <p className="text-[6.88px] md:text-[14.71px] font-medium text-primary-900 dark:text-[#B7B7B7]">
+              <p className="text-[12.5664px] leading-[19px] md:text-[14.71px] md:leading-[22px] font-normal text-primary-900 dark:text-[#B7B7B7]">
                 {subTitle}
               </p>
               <Icon
@@ -42,9 +41,12 @@ const CardData = ({
             </div>
           </div>
 
-          <Text size="sm" color="white-50" variant="light">
+          {/* <Text size="sm" color="white-50" variant="light">
             {text}
-          </Text>
+          </Text> */}
+          <p className="text-[12.5664px] leading-[19px] md:text-[14.7092px] font-light md:leading-[22px] text-primary-900 dark:text-[#ffffff99]">
+            {text}
+          </p>
         </div>
         <div className="relative">{partBottom}</div>
       </div>

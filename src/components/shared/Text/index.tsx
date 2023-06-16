@@ -9,7 +9,7 @@ type Color =
   | 'white'
   | 'white-50'
   | 'dark-white'
-type Size = 'xs' | 'sm' | 'md' | 'lg'
+type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xxs'
 
 interface Props extends HTMLAttributes<HTMLHeadingElement> {
   size?: Size
@@ -22,7 +22,8 @@ const sizes: Record<Size, string> = {
   lg: 'paragraph-1',
   md: 'paragraph-2',
   sm: 'text-[12.5664px]',
-  xs: 'text-[6.88px] leading-[10.32px] sm:text-[17.16px] sm:leading-[25.74px]'
+  xs: 'text-[6.88px] leading-[10.32px] md:text-[17.16px] md:leading-[25.74px]',
+  xxs: 'text-[5.89787px] leading-[9px] md:text-[14.7092px] md:leading-[22px]'
 }
 
 const colors: Record<Color, string> = {

@@ -19,10 +19,10 @@ const ChartRight = () => {
         <div className="rounded-[17.1608px] hidden md:block  items-center card-bar-right px-[22.06px] pb-[14.45px] pt-[41.68px]">
           <div className="flex justify-between pl-[28.2px] pr-[82px]">
             <div>
-              <Heading size="md" variant="semibold" color="white">
+              <Heading size="lg" variant="semibold" color="white">
                 Sales Comparison
               </Heading>
-              <p className="font-light text-[24.52px] text-white">
+              <p className="font-light text-[24.52px] text-white leading-[37px]">
                 Than last day
               </p>
             </div>

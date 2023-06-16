@@ -21,9 +21,12 @@ const ChartLeft = () => {
             </Heading>
 
             <div className="flex gap-[3.89px] sm:gap-[11.58px] items-center">
-              <p className="text-[6.88px] sm:text-[14.71px] font-medium text-primary-900 dark:text-[#ffffffbf]">
+              {/* <p className="text-[6.88px] sm:text-[14.71px] font-medium text-primary-900 dark:text-[#ffffffbf]">
                 This Week
-              </p>
+              </p> */}
+              <Text size="xxs" variant="medium" color="dark-white">
+                This Week
+              </Text>
               <Icon
                 name="arrow-down"
                 className="w-[2.95px] h-[5.87px] sm:w-[7.35px] sm:h-[14.71px] text-primary-900 dark:text-[#B7B7B7]"
@@ -59,33 +62,33 @@ const ChartLeft = () => {
               </div>
               <div className="ml-[7.53px] flex justify-between  gap-6">
                 <div>
-                  <div className="w-[19.59px] h-[18.8px] bg-primary-50 rounded-[3.93191px]"></div>
+                  <div className="w-[19.59px] h-[18.8px] md:w-[26.97px] md:h-[25.74px] bg-primary-50 rounded-[3.93191px]"></div>
                   <Text
                     size="xs"
                     variant="medium"
-                    className="mt-[9.85px]"
+                    className="mt-[9.85px] xl:mt-[13.48px]"
                     color="dark-white"
                   >
                     Movies Ticket
                   </Text>
                 </div>
                 <div>
-                  <div className="w-[19.59px] h-[18.8px] bg-primary rounded-[3.93191px]"></div>
+                  <div className="w-[19.59px] h-[18.8px] md:w-[26.97px] md:h-[25.74px] bg-primary rounded-[3.93191px]"></div>
                   <Text
                     size="xs"
                     variant="medium"
-                    className="mt-[9.85px]"
+                    className="mt-[9.85px] xl:mt-[13.48px]"
                     color="dark-white"
                   >
                     Movies Ticket
                   </Text>
                 </div>
                 <div>
-                  <div className="w-[19.59px] h-[18.8px] bg-primary-100 rounded-[3.93191px]"></div>
+                  <div className="w-[19.59px] h-[18.8px] md:w-[26.97px] md:h-[25.74px] bg-primary-100 rounded-[3.93191px]"></div>
                   <Text
                     size="xs"
                     variant="medium"
-                    className="mt-[9.85px]"
+                    className="mt-[9.85px] xl:mt-[13.48px]"
                     color="dark-white"
                   >
                     Football Ticket

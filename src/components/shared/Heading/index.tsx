@@ -14,9 +14,9 @@ interface Props extends HTMLAttributes<HTMLHeadingElement> {
 
 const sizes: Record<Size, string> = {
   xl: '24.5154px',
-  lg: 'title-5',
-  md: 'text-[16.8286px] md:text-[24.5154px]',
-  sm: 'title-7',
+  lg: 'text-[24.5154px] leading-[37px]',
+  md: 'text-[16.8286px] leading-[25px] md:text-[24.5154px] md:leading-[55px]',
+  sm: 'text-[16.76px] leading-[25.13px] md:leading-[29px] md:text-[19.61px]',
   xs: 'title-8'
 }
 
@@ -29,7 +29,7 @@ const colors: Record<Color, string> = {
 }
 
 const variants: Record<Variant, string> = {
-  light: 'font-light md:font-medium ',
+  light: 'dark:font-light font-normal md:font-medium dark:md:font-medium',
   normal: 'font-normal',
   medium: 'font-medium',
   semibold: 'font-semibold',
