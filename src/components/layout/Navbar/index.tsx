@@ -8,7 +8,6 @@ import ToggleTheme from '@src/components/shared/ToggleTheme'
 
 const Navbar = () => {
   const [isMenu, setisMenu] = useState(true)
-  console.log(isMenu)
   return (
     <>
       <header

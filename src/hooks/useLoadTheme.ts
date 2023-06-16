@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
-import { getThemeFromLocalStorage, useTheme } from '../store/theme'
+import { useTheme } from '../store/theme'
 
 const useLoadTheme = () => {
   useEffect(() => {
-    const theme = getThemeFromLocalStorage()
+    const theme = 'dark'
 
     if (theme) {
       useTheme.setState({ theme })
