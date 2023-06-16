@@ -7,7 +7,7 @@ import Text from '@src/components/shared/Text'
 const ChartLeft = () => {
   return (
     <>
-      <div className="w-full flex flex-col gap-[26px] max-w-[878.88px]">
+      <div className="w-full flex flex-col mx-auto  gap-[26px] max-w-[878.88px]">
         {/* FIRST CHART */}
         <div className="bg-secondary-50 dark:bg-primary-400 rounded-[15px] sm:rounded-[17.1608px] shadow-card w-full pt-[15px] pb-[20.05px] pl-[15px] pr-[13.74px] sm:pt-[36.77px] sm:pb-[35.29pxpx] sm:pl-[36.77px] sm:pr-[44.13px] border border-primary dark:border-transparent">
           {/* TITLE */}

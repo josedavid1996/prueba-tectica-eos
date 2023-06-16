@@ -14,17 +14,17 @@ const Slider = () => {
   const uid = useId()
   return (
     <>
-      <div className="mt-[23px] w-full h-full ">
+      <div className="mt-[23px] w-full  ">
         <Heading variant="light" size="md" className="text-center mb-2">
           Event Galleries
         </Heading>
 
-        <div className="h-[200px]  rounded-[15px] overflow-hidden w-full">
+        <div className=" realtive  rounded-[15px] overflow-hidden w-full">
           <Swiper
             navigation={true}
             modules={[Navigation, Autoplay]}
             loop={true}
-            className="h-full w-full"
+            className="w-full "
             autoplay={{
               delay: 2500,
               disableOnInteraction: false
@@ -35,17 +35,15 @@ const Slider = () => {
               .map((_, index) => {
                 return (
                   <SwiperSlide key={uid}>
-                    <div className="w-full h-full relative">
+                    <div className="w-full h-[550px] relative overflow-hidden">
                       <Image
-                        src={`https://picsum.photos/200/300?random=${
+                        src={`https://picsum.photos/300/300?random=${
                           index + 1
                         }`}
                         alt={uid}
-                        width={200}
-                        height={300}
-                        layout="responsive"
-                        className="w-full h-full"
-                        // objectFit="contain"
+                        layout="fill"
+                        className="w-full h-full left-0"
+                        objectFit="cover"
                       />
                     </div>
                   </SwiperSlide>

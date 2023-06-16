@@ -9,7 +9,7 @@ const Home = () => {
           Dashboard /
         </h3>
       </div>
-      <div className="flex flex-col md:flex-row px-[21.19px] md:gap-[48px] lg:mt-[47px]">
+      <div className="flex flex-col xl:flex-row  px-[21.19px] md:gap-[48px] lg:mt-[47px] mb-[50.82px] lg:mb-[100px]">
         <ChartLeft />
         <ChartRight />
       </div>

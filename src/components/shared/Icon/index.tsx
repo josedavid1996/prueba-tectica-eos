@@ -7,6 +7,8 @@ export type IconName =
   | 'campaign'
   | 'message'
   | 'gift'
+  | 'arrow-left'
+  | 'arrow-right'
   | 'arrow-down'
   | 'search'
   | 'sun'
@@ -32,7 +34,9 @@ const icons: Record<IconName, any> = {
   search: dynamic(() => import('@assets/icons/search.svg')),
   sun: dynamic(() => import('@assets/icons/sun-regular.svg')),
   moon: dynamic(() => import('@assets/icons/moon-regular.svg')),
-  curve: dynamic(() => import('@assets/icons/curve.svg'))
+  curve: dynamic(() => import('@assets/icons/curve.svg')),
+  'arrow-right': dynamic(() => import('@assets/icons/caret-right-solid.svg')),
+  'arrow-left': dynamic(() => import('@assets/icons/caret-left-solid.svg'))
 }
 const Icon = ({ name, ...props }: Props) => {
   const Component = icons[name]
