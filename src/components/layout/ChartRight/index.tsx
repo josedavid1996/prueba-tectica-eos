@@ -6,7 +6,7 @@ import Slider from '@src/components/shared/Slider'
 const ChartRight = () => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full ">
         <div className="rounded-[17.1608px] hidden md:block  items-center card-bar-right px-[22.06px] pb-[14.45px] pt-[41.68px]">
           <div className="flex justify-between pl-[28.2px] pr-[82px]">
             <div>
@@ -90,6 +90,7 @@ const ChartRight = () => {
             />
           </div>
         </div>
+
         <Slider />
       </div>
     </>

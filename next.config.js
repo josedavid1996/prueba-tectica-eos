@@ -16,7 +16,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   images: {
-    domains: ['images.pexels.com', 'picsum.photos', 'fastly.picsum.photos']
+    domains: ['images.pexels.com', 'picsum.photos', 'fastly.picsum.photos', 'images.dog.ceo']
   }
 }
 

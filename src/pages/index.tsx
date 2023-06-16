@@ -4,12 +4,12 @@ import ChartRight from '@src/components/layout/ChartRight'
 const Home = () => {
   return (
     <>
-      <div className="hidden lg:block">
+      <div className="hidden lg:block ">
         <h3 className="text-primary py-[20px] pl-[93.87px] text-[16px] font-semibold dark:bg-primary-500 border-y border-primary dark:border-transparent">
           Dashboard /
         </h3>
       </div>
-      <div className="flex flex-col xl:flex-row  px-[21.19px] md:gap-[48px] lg:mt-[47px] mb-[50.82px] lg:mb-[100px]">
+      <div className="flex flex-col xl:flex-row  px-[21.19px] md:gap-[48px] lg:mt-[47px] mb-[50.82px] lg:mb-[100px] ">
         <ChartLeft />
         <ChartRight />
       </div>
