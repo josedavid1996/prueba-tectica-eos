@@ -15,20 +15,20 @@ interface Props extends HTMLAttributes<HTMLHeadingElement> {
 const sizes: Record<Size, string> = {
   xl: '24.5154px',
   lg: 'title-5',
-  md: 'text-[16.8286px] sm:text-[24.5154px]',
+  md: 'text-[16.8286px] md:text-[24.5154px]',
   sm: 'title-7',
   xs: 'title-8'
 }
 
 const colors: Record<Color, string> = {
-  white: 'text-white',
+  white: 'dark:text-white text-primary',
   black: 'text-black dark:text-white',
   primary: 'text-primary',
   secondary: 'text-secondary'
 }
 
 const variants: Record<Variant, string> = {
-  light: 'font-light',
+  light: 'font-light md:font-medium ',
   normal: 'font-normal',
   medium: 'font-medium',
   semibold: 'font-semibold',

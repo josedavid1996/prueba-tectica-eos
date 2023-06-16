@@ -16,13 +16,13 @@ const sizes: Record<Size, string> = {
   lg: 'paragraph-1',
   md: 'paragraph-2',
   sm: 'text-[12.5664px]',
-  xs: 'text-[6.88px] leading-[10.32px] sm:text-[17.16px] sm:eading-[25.74px]'
+  xs: 'text-[6.88px] leading-[10.32px] sm:text-[17.16px] sm:leading-[25.74px]'
 }
 
 const colors: Record<Color, string> = {
-  white: 'text-primary dark:text-white',
+  white: 'text-primary-900 dark:text-white',
   'white-50': 'text-primary dark:text-[#ffffff99]',
-  black: 'text-black dark:text-white',
+  black: 'text-primary-900 dark:text-white',
   primary: 'text-primary',
   secondary: 'text-secondary'
 }
