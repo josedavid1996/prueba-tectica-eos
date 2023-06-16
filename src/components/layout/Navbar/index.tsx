@@ -11,14 +11,14 @@ const Navbar = () => {
   return (
     <>
       <header
-        className="h-[73px] smx:h-[120px] mt-[17px] smx:mt-[0] pl-[19px] pr-4 pt-[17px] pb-[21.03px] flex justify-between items-center lg:gap-[20px]  relative "
+        className="h-[73px] smx:h-[120px] mt-[17px] smx:mt-[0] pl-[19px] pr-4 pt-[17px] pb-[21.03px] flex justify-between items-center lg:gap-[20px]  relative z-20"
         data-aos="fade-right"
       >
         {/* BUSCADOR MOBILE */}
         <div
           className={`${
             isMenu ? 'left-[-100%]' : 'left-0'
-          } absolute top-[73px] w-full  smx:top-[120px] transition-all duration-500 lg:hidden px-4`}
+          } absolute top-[73px] w-full  smx:top-[120px] transition-all duration-500 lg:hidden px-4 z-90`}
         >
           <div className="min-h-[56px] w-full   border border-primary dark:border-primary-600 rounded-[12px] shadow-input bg-secondary-50 dark:bg-primary-900 overflow-hidden flex items-center pr-[25px] ">
             <input className="min-h-[26px] w-full  bg-secondary-50 dark:bg-primary-900 pl-[24px] text-primary-900 dark:text-[#B9B9B9]  outline-none" />
