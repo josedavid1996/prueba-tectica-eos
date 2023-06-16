@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
@@ -6,9 +8,9 @@ import 'swiper/css/navigation'
 
 import { Autoplay, Navigation } from 'swiper'
 
-import Heading from '../Heading'
 import { v4 } from 'uuid'
-import Image from 'next/image'
+
+import Heading from '../Heading'
 import Icon from '../Icon'
 
 const images = [

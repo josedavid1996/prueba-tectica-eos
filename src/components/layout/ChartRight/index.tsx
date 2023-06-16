@@ -1,7 +1,9 @@
+import dynamic from 'next/dynamic'
+
 import BarCardRight from '@src/components/shared/BarCardRight'
 import Heading from '@src/components/shared/Heading'
 import Icon from '@src/components/shared/Icon'
-import dynamic from 'next/dynamic'
+
 const Slider = dynamic(
   () =>
     import('@src/components/shared/Slider').then((Slider) => Slider.default),

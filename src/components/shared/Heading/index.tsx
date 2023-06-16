@@ -1,5 +1,6 @@
-import { classNames } from '@src/utils/classNames'
 import React, { HTMLAttributes } from 'react'
+
+import { classNames } from '@src/utils/classNames'
 
 type Variant = 'light' | 'normal' | 'medium' | 'semibold' | 'bold'
 type Color = 'primary' | 'secondary' | 'black' | 'white' | 'dark-white'

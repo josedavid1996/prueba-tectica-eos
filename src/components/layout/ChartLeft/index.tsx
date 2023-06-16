@@ -1,9 +1,10 @@
+import Image from 'next/image'
+
 import BarCardLeft from '@src/components/shared/BarCardLeft'
 import CardData from '@src/components/shared/CardData'
 import Heading from '@src/components/shared/Heading'
 import Icon from '@src/components/shared/Icon'
 import Text from '@src/components/shared/Text'
-import Image from 'next/image'
 
 const ChartLeft = () => {
   return (
