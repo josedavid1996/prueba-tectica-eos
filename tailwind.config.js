@@ -42,7 +42,8 @@ module.exports = {
       },
       screens: {
         smx: '750px',
-        xxl: '1690px'
+        xxl: '1690px',
+        xxxl: '1760px'
       },
       extendedSpacing: {
         // Fractional values

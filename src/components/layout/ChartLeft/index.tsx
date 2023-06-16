@@ -153,7 +153,7 @@ const ChartLeft = () => {
             isViewSubTitle="hidden xxl:flex"
             partBottom={
               <div className=" flex items-center justify-center xxl:justify-between px-8 mb-[18.22px]  xxl:mb-[30.13px] ">
-                <div className="relative w-[171.99px] h-[179.57px] xxl:w-[114.36px] xxl:h-[114.9px]">
+                <div className="relative w-[171.99px] h-[179.57px] xxl:w-[90px] xxl:h-[90px] xxxl:w-[114.36px] xxxl:h-[114.9px]">
                   <Image
                     src="/rounded-grafic.png"
                     alt="rounded-grafic"
